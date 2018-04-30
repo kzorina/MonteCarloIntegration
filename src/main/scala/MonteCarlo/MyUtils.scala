@@ -1,7 +1,7 @@
-package object parallel {
+package MonteCarlo
+import java.util.concurrent._
 
-  import java.util.concurrent._
-
+object MyUtils {
   // The fork/join framework uses a work-stealing algorithm
   // http://supertech.csail.mit.edu/papers/steal.pdf
   val forkJoinPool = new ForkJoinPool
